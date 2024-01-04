@@ -19,3 +19,9 @@ const result = linearSearch(numbers, 88888);
 const doneIn = Date.now() - start;
 verify(result);
 console.log(`Done in ${doneIn} ms`);
+
+const start1 = Date.now();
+const result1 = linearSearch(numbers, 1000001);
+const doneIn1 = Date.now() - start1;
+verify(result1);
+console.log(`Not found in ${doneIn1}ms`);
