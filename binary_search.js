@@ -1,17 +1,17 @@
 function binarySearch(list, target) {
-  let first = 0;
-  let last = list.length - 1;
-  while (first <= last) {
-    const mid = Math.round((first + last) / 2);
-    if (list[mid] == target) {
+  let left = 0;
+  let right = array.length - 1;
+  while (left <= right) {
+    const mid = left + Math.floor((right - left) / 2);
+    if (array[mid] === key) {
       return mid;
-    } else if (list[mid] < target) {
-      first = mid + 1;
+    }
+    if (array[mid] < key) {
+      left = mid + 1;
     } else {
-      last = mid - 1;
+      right = mid - 1;
     }
   }
-
   return null;
 }
 
